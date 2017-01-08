@@ -1,0 +1,1 @@
+<?php $ci->redirect($vd->assets_base . 'other/prnewswire_distribution.pdf', false) ?>

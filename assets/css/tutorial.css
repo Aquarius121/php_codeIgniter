@@ -1,0 +1,95 @@
+#tutorial-video-content{
+	overflow: hidden;
+	padding: 15px;
+}
+.video-item{
+	padding: 15px;
+}
+.video-item .wrapper{
+	width: 100%;
+	padding: 0px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+}
+
+.video-item:hover .wrapper{
+	box-shadow: 0 0 8px rgba(0,0,0,.1);
+}
+
+.video-image-column{
+	padding: 0px;
+}
+
+.video-info{
+	padding: 15px;
+}
+
+.video-info .video-title{
+	height: 50px;
+}
+
+.video-info .video-title h3{
+	margin: 0px;
+}
+
+.video-item .thumbnail{
+	padding: 0;	
+	border: none;
+	margin: 0px;
+	cursor: pointer;
+}
+
+.video-item .thumbnail img{
+	width: 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.video-item .thumbnail .preview{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background: rgba(0,0,0,.75);
+	transition: opacity .4s ease 0s;
+	opacity: 0;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.video-item .thumbnail .preview i{
+	font-size: 100px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: #eee;
+}
+
+.video-item .thumbnail:hover .preview{
+	opacity: 1;
+}
+
+.video-item .video-meta{
+	color: #999;
+}
+
+#tutorial-video-content h2{
+	padding-left: 15px;
+}
+
+@media only screen and (max-width: 1600px) {
+	.video-info .video-title{
+		min-height: 70px;
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.video-info .video-title{
+		height: auto;
+		min-height: auto;
+		margin-bottom: 10px;
+	}
+}

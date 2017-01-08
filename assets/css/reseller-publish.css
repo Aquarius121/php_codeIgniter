@@ -1,0 +1,101 @@
+.grid-report {
+	color: #999999;
+	font-size: 12px;
+	font-style: italic !important;
+	padding: 25px 0 5px;
+	margin: 0 0 20px;
+	text-align: right;
+}
+
+.grid-report a {
+	font-style: normal !important
+}
+
+.searchResultsFilter {
+	margin-bottom: 30px;
+	font-size: 11px;
+}
+
+.searchResultsFilter a {
+	text-decoration: underline
+}
+
+.grid .dropdown-menu li {
+	width: 100% !important;
+	overflow: hidden !important;
+	font-size: 13px !important;
+}
+
+.main .nav-tabs > .active > a,
+.main .nav-tabs > .active > a:hover,
+.main .nav-tabs > .active > a:focus {
+	color: #5F93C7;
+	outline: 0 none;
+}
+
+.main .nav-tabs > .active > a,
+.main .nav-tabs > .active > a:hover,
+.main .nav-tabs > .active > a:focus {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-bottom: 1px solid #FFFFFF !important;
+	border-image: none;
+	border-left: 1px solid #CCCCCC !important;
+	border-right: 1px solid #CCCCCC !important;
+	border-top: 1px solid #CCCCCC !important;
+	bottom: -1px;
+	position: relative;
+	z-index: 999;
+}
+
+.grid thead th {
+	font-size: 14px;
+	padding: 0 0px 15px 0;
+	white-space: nowrap;
+}
+
+.grid .left {
+	text-align: left
+}
+
+.grid td {
+	padding: 15px 0
+}
+
+.main .nav-tabs {
+	border-bottom: 1px solid #CCCCCC
+}
+
+.main .nav-tabs {
+	background: none repeat scroll 0 0 #F7F7F7;
+	margin-top: -5px;
+	padding: 0 0 0 30px;
+	position: relative;
+}
+
+.main .nav-tabs > li > a {
+	color: #666666;
+	font-size: 16px;
+	padding: 10px 10px;
+}
+
+.rm-list li {
+	overflow: hidden;
+	padding: 10px 9px;
+}
+
+.no-order-results {
+	padding: 20px 0;
+	text-align: center;
+}
+
+.grid-report {
+	padding-top: 0;
+}
+
+.label-class {
+	margin: 0 5px 5px 0;
+}

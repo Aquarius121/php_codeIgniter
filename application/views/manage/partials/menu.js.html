@@ -1,0 +1,21 @@
+<script>
+
+$(function() {
+
+	var top_level_links = $("#side-nav-menu li a.top-level-link");
+	top_level_links.on("click", function(ev) {
+		top_level_links.each(function() {
+			var active = $(this);
+			active.removeClass("active");
+			var tab_selector = active.data("target");
+			$(tab_selector).collapse("hide");
+		});
+	});
+
+	$("#side-nav-menu").mmenu({}, {
+		clone: true
+	});
+
+});
+
+</script>

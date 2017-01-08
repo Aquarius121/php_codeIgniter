@@ -1,0 +1,7 @@
+{
+	"dependencies": {
+		"debug": "latest",
+		"router": "latest",
+		"sprintf-js": "latest"
+	}
+}

@@ -1,0 +1,224 @@
+/* Placeholder */
+input::-webkit-input-placeholder { color: #999; opacity: 1;}
+input:-moz-placeholder { color: #999;  opacity: 1;}
+input::-moz-placeholder { color: #999;  opacity: 1;}
+input:-ms-input-placeholder { color: #999;  opacity: 1;}
+textarea::-webkit-input-placeholder { color: #999;  opacity: 1;}
+textarea:-moz-placeholder { color: #999;  opacity: 1;}
+textarea::-moz-placeholder { color: #999;  opacity: 1;}
+textarea:-ms-input-placeholder { color: #999;  opacity: 1;}
+
+
+input, textarea, select, button {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+input.has-loader.loader {
+	background-position: 96% center;
+}
+
+
+/* Forms */
+.row-fluid .in-text {
+	color: #333;
+	height: 44px;
+	padding: 0 13px;
+	margin-bottom: 20px;
+}
+
+.row-fluid textarea.in-text {
+	padding: 10px 13px;
+}
+
+.row-fluid .in-text:focus {
+	border: 1px solid #1357A8;
+	
+	-webkit-box-shadow: 0 0 3px 0 #e0f0ff;
+	-moz-box-shadow: 0 0 3px 0 #e0f0ff;
+	box-shadow: 0 0 3px 0 #e0f0ff;
+}
+
+.row-fluid .in-text:focus::-webkit-input-placeholder { color: #333; opacity: 1;}
+.row-fluid .in-text:focus:-moz-placeholder { color: #333; opacity: 1;}
+.row-fluid .in-text:focus::-moz-placeholder { color: #333; opacity: 1;}
+.row-fluid .in-text:focus:-ms-input-placeholder { color: #333; opacity: 1;}
+
+.row-fluid .aside .in-text {
+	height: 38px;
+	margin-bottom: 10px;
+	padding: 1px 8px;
+}
+
+.row-fluid .aside .reply-comments {
+	height: 110px;
+	margin-bottom: 10px;
+	padding: 1px 8px;
+}
+
+.aside .btn, 
+.aside .bt-silver,
+.aside .bt-orange {
+	padding: 8px 7px;
+}
+
+.aside .btn-group.bootstrap-select .btn {
+	padding: 8px 12px;
+}
+
+.row-fluid textarea.in-text {
+	height: 110px;
+}
+
+.row-fluid textarea.in-text.in-content {
+	height: 220px;
+}
+
+.help-block {
+	color: #999;
+	font-size: 12px;
+	padding: 0 0 10px;
+	margin-top: -15px;
+}
+
+.help-block-link {
+	font-size: 12px;
+	padding-left: 10px;
+}
+
+.main h2 .help-inline {
+	color: #999;
+	font-size: 18px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+.radio, .checkbox {
+	color: #999;
+	font-size: 16px;
+	padding-bottom: 7px;
+}
+
+
+strong.placeholder {
+	color: #777;
+	display: block;
+	font-size: 10px;
+	letter-spacing: 0.5px;
+	line-height: 12px;
+	opacity: 0.6;
+	position: absolute;
+	top: 0px;
+	transition: opacity 0.5s, top 0.5s;
+}
+
+strong.placeholder.ta-right {
+	right: 0px;
+}
+
+.has-placeholder:focus ~ strong.placeholder,
+.has-placeholder.open ~ strong.placeholder {
+	color: #1357A8;
+	opacity: 1;
+}
+
+input.has-placeholder:not(:valid):not(:disabled):not(.valid) ~ strong.placeholder,
+textarea.has-placeholder:not(:valid):not(:disabled):not(.valid) ~ strong.placeholder,
+select.has-placeholder:not(:valid):not(:disabled):not(.valid) ~ strong.placeholder,
+.has-placeholder.invalid:not(.valid) ~ strong.placeholder {
+	color: #7D0F0F;
+}
+
+.placeholder-container .required-error {
+	margin-bottom: -5px;
+}
+
+.required-error ~ strong.placeholder {
+	display: none;
+}
+
+input[type=text].has-placeholder,
+input[type=url].has-placeholder,
+input[type=password].has-placeholder,
+input[type=email].has-placeholder,
+input[type=datetime].has-placeholder,
+input[type=datetime-local].has-placeholder,
+input[type=date].has-placeholder,
+input[type=week].has-placeholder,
+input[type=month].has-placeholder,
+input[type=number].has-placeholder,
+input[type=search].has-placeholder,
+input[type=tel].has-placeholder,
+input[type=color].has-placeholder,
+textarea.has-placeholder {
+	box-shadow: none;
+}	
+
+.has-placeholder {
+	margin-top: 15px;
+}
+
+.placeholder-container {
+	position: relative;
+}
+
+.placeholder-container.placeholder-simple {
+	padding-top: 15px;
+}
+
+.placeholder-container.placeholder-simple .has-placeholder {
+	margin-top: 0;
+}
+
+.images-uploader-list .select-image-content i {
+	margin-bottom: 2px;
+}
+
+
+.row-fluid .aside-fluid {
+    margin-left: 3.12766%;
+    width: 29.9149%;
+}
+
+
+.aside-properties.padding-top {
+    padding-top: 18px;
+}
+.aside-properties {
+    background: none repeat scroll 0 0 #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 18px 10px;
+    width: 222px !important;
+}
+
+.claim_nr_header
+{
+	margin-right: 20px;
+}
+
+.verify_badge
+{
+	text-align: center;
+}
+
+.claim_center_area
+{
+	padding-left: 45px;
+}
+
+.claim_right_side
+{
+	padding-left: 45px;
+}
+
+.rb-claim li {
+	font-size: 13px;
+}
+
+.rb-claim li {
+	list-style: disc;
+    margin-left: 10px;
+    padding: 3px 0 0 4px;
+}

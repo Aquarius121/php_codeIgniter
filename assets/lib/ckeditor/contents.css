@@ -1,0 +1,87 @@
+@import url('../../lib/bootstrap/css/bootstrap.min.css');
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic');
+
+body {
+	color: #333;
+	font-family: 'Open Sans', Arial,​ Helvetica,​ sans-serif;
+	line-height: 20px;
+	font-size: 14px;
+	margin: 0;
+	max-width: 90%;
+	padding: 10px;
+	background: transparent;
+}
+
+.cke_placeholder {
+	border-bottom: 1px solid #ccc;
+	color: #666;
+	display: inline-block;
+	font-family: Consolas, monospace;
+	font-size: 13px;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 3px;
+	pointer-events: none;
+}
+
+.cke_placeholder.readonly {
+	color: #aaa;
+	font-family: inherit;
+	border-bottom: none;
+	height: inherit;
+	line-height: inherit;
+	padding: 0;
+	font-size: inherit;
+}
+
+p {
+	margin: 0;
+	padding: 15px 0;
+}
+
+ul, ol {
+	list-style-position: inside;
+	margin: 0;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+p + p,
+p + ol,
+p + ul,
+ol + p,
+ul + p,
+ul + ol, 
+ol + ul,
+ol + ol,
+ul + ul {
+	border-top: 1px dashed #ddd;
+}
+
+p:first-child {
+	padding-top: 0;
+}
+
+p:last-child {
+	padding-bottom: 0;
+}
+
+img {
+	margin: 5px;
+}
+
+.code-editor * {
+	font-family: Consolas, monospace;
+	font-size: 14px;
+	color: #333;
+	border: none;
+	line-height: normal;
+	margin: 0;
+	padding: 0;
+}
+
+.code-editor .cke_placeholder {
+	color: #B70004;
+	font-weight: bold;
+}

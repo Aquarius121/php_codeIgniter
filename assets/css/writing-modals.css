@@ -1,0 +1,191 @@
+.modal-body .mb-writer {
+	color: #4E8B38 !important;
+}
+
+.mb-date {
+	font-size: 10px !important;
+	color: #666 !important;
+}
+
+.mb-writer {
+	color: #4E8B38 !important;
+}
+
+.mb-author {
+	color: #333333;
+	font-weight: 600;
+}
+
+.mb-editor {
+	color: #F95D04 !important;
+}
+
+.mb-editor-panel {
+	background: none repeat scroll 0 0 #FFE6E6;
+	border: 1px solid #FDC1C1;
+	border-radius: 4px;
+	padding: 20px;
+}
+
+.modal-body p {
+	color: #555555;
+	font-size: 13px !important;
+	line-height: 18px;
+	padding: 0;
+}
+
+.modal-body .mb-author .mb-date {
+	color: #555555;
+	font-size: 10px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.mb-author{
+	font-size: 12px !important;
+	font-weight: 400;
+}
+
+.modal-body li {
+	padding: 10px 0;
+}
+
+.modal-body {
+	 max-height: 127px;
+}
+
+.modal-body, .modal-footer {
+	padding: 20px;
+}
+
+.modal-body li:first-child {
+	border-top: 0 none;
+	padding-top: 0;
+}
+
+.mb-customer-panel {
+	background: none repeat scroll 0 0 #E7EEF5;
+	border: 1px solid #B6CBE0;
+	border-radius: 4px;
+	padding: 20px;
+}
+
+.modal-body .mb-customer {
+	color: #3E78B3;
+}
+
+.modal-footer label {
+	font-size: 14px;
+	font-weight: 600;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.btn-reslved {
+	display: block;
+	margin-top: 10px;
+	text-align: left;
+}
+
+.btn-reslved i {
+	color: #239936;
+}
+
+.modal-footer .bt-silver {
+	margin-left: 10px;
+}
+
+.mb-writer-panel {
+	background: none repeat scroll 0 0 #E6F4E3;
+	border: 1px solid #CDECB7;
+	border-radius: 4px;
+	padding: 20px;
+}
+
+.btn-orange {
+	background: linear-gradient(to bottom, #FB9A06 0%, #F95F04 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: 1px solid #E45D2B;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 #FCBE5D inset;
+	color: #FFFFFF;
+	text-shadow: none;
+}
+
+.btn-blue {
+	background: linear-gradient(to bottom, #5D90C3 0%, #203B57 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: 1px solid #1E3853;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 #86ADD4 inset;
+	color: #FFFFFF;
+	text-shadow: none;
+}
+
+.btn-orange:hover,
+.btn-orange:focus {
+	 color: #fff;
+	 text-shadow: none;
+	 border: 1px solid #e45d2b;
+	 background: #fb9a06; /* Old browsers */
+	 background: -moz-linear-gradient(top,  #fb9a06 0%, #f95f04 100%); /* FF3.6+ */
+	 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fb9a06), color-stop(100%,#f95f04)); /* Chrome,Safari4+ */
+	 background: -webkit-linear-gradient(top,  #fb9a06 0%,#f95f04 100%); /* Chrome10+,Safari5.1+ */
+	 background: -o-linear-gradient(top,  #fb9a06 0%,#f95f04 100%); /* Opera 11.10+ */
+	 background: -ms-linear-gradient(top,  #fb9a06 0%,#f95f04 100%); /* IE10+ */
+	 background: linear-gradient(to bottom,  #fb9a06 0%,#f95f04 100%); /* W3C */
+	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb9a06', endColorstr='#f95f04',GradientType=0 ); /* IE6-9 */
+	 opacity: 0.8;
+	 box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 #fcbe5d;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+	 color: #fff;
+	 text-shadow: none;
+	 border: 1px solid #1e3853;
+	 background: #5d90c3; /* Old browsers */
+	 background: -moz-linear-gradient(top,  #5d90c3 0%, #203b57 100%); /* FF3.6+ */
+	 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5d90c3), color-stop(100%,#203b57)); /* Chrome,Safari4+ */
+	 background: -webkit-linear-gradient(top,  #5d90c3 0%,#203b57 100%); /* Chrome10+,Safari5.1+ */
+	 background: -o-linear-gradient(top,  #5d90c3 0%,#203b57 100%); /* Opera 11.10+ */
+	 background: -ms-linear-gradient(top,  #5d90c3 0%,#203b57 100%); /* IE10+ */
+	 background: linear-gradient(to bottom,  #5d90c3 0%,#203b57 100%); /* W3C */
+	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d90c3', endColorstr='#203b57',GradientType=0 ); /* IE6-9 */
+	 opacity: 0.8;
+	 box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 #86add4;
+}
+
+.modal-footer .btn-blue,
+.modal-footer .btn-orange {
+	padding: 5px 11px;
+	margin-left: 2px;
+}
+
+.modal-body .conversation li {
+	padding: 0px;
+	margin-bottom: 2px;
+}
+
+.modal-body .conversation li section {
+	margin-bottom: 12px;
+	margin-top: 12px;
+}
+
+.modal-body .conversation li:first-child section {
+	margin-top: 0;
+}
+
+.modal-body .conversation li:last-child {
+	margin-bottom: 20px;
+}
+
+.modal-body .conversation li > p {
+	text-align: center;
+}
+
+.pad-top-bot-10 {
+	padding: 10px 0;
+}
+
+.modal-content-pitch {
+	width: 420px;
+	height: 180px;
+	font-size: 13px !important;
+}

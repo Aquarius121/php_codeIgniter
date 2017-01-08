@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [[ $# -eq 0 ]];
+then 
+	echo "usage: raw/migrations/create <name>" >&2;
+	exit -1;
+fi
+
+DATE=$(date '+%Y%m%d%H%M%S.%N');
+SUFFIX=$(echo -n $@ | tr A-Z a-z | tr -c a-z0-9 -);
+
+if [[ ! -z "$SUFFIX" ]]
+then
+	SUFFIX="-$SUFFIX";
+fi
+
+FILE="raw/migrations/${DATE}${SUFFIX}.sql";
+
+if [[ ! -z "$EDITOR" ]] && [[ -e "$EDITOR" ]]
+then
+	$EDITOR "$FILE"
+else
+	nano "$FILE"
+fi

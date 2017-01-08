@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [[ "$UID" -eq 0 ]]
+then
+	su -c "$0" www
+	exit
+fi
+
+pkill -f 'stats-queue node' && sleep 5
+
+/opt/bin/stats-queue/stats-queue-start
+

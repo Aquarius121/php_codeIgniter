@@ -1,0 +1,1 @@
+A billing failure has occurred. The full details are attached. 

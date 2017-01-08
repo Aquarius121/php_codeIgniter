@@ -1,0 +1,302 @@
+body, html {
+	background: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	font-size: 15px;
+}
+
+header,
+footer,
+nav,
+.no-print {
+	display: none !important;
+}
+
+.modal,
+.modal-backdrop {
+	display: none !important;
+}
+
+h1 {
+	color: #333333 !important;
+}
+
+h2 {
+	color: #336699 !important;
+}
+
+* {
+	box-shadow: none !important;
+	border-radius: 0 !important;
+}
+
+.main .container .content {
+	border: none !important;
+	border-radius: 0 !important;
+	margin-top: 0 !important;
+}
+
+.content.content-no-tabs {
+	padding: 15px 30px;
+}
+
+div:not(.with-border), 
+section:not(.with-border) {
+	border: none !important;
+	border-radius: 0 !important;
+}
+
+.break-after {
+	page-break-after: always;
+}
+
+.printable .printable-break-before {
+	page-break-before: always;
+	margin-bottom: 40px;
+}
+
+.break-avoid {
+	page-break-inside: avoid;
+}
+
+.printable .printable-break-avoid, 
+.printable .printable-page {
+	page-break-inside: avoid;
+}
+
+.printable .printable-break-after {
+	page-break-after: always;
+}
+
+.printable .printable-page {
+	height: 1390px;
+	padding-top: 30px;
+	position: relative;
+}
+
+.report-header {	
+	padding: 0 !important;
+	background: #fff;
+	margin-bottom: 15px !important;
+}
+
+.report-header img {
+	float: left;
+	width: auto;
+}
+
+.report-footer {	
+	padding: 0 !important;
+	margin: 0 !important;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.report-header .report-label {
+	text-align: right;
+	height: 26px;
+	line-height: 26px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #1357A8;
+}
+
+.report-footer .report-label {
+	float: right;
+	width: auto;
+	height: 26px;
+	line-height: 26px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #1357A8;
+	/* pdf bug fix */
+	min-width: 200px;
+	white-space: nowrap;
+	text-align: right;
+}
+
+.report-footer .report-content {
+	float: left;
+	width: auto;
+	height: 26px;
+	line-height: 26px;
+	font-size: 12px;
+}
+
+.report-footer .report-content a {
+	color: #666;
+}
+
+.report-header .border-thick {
+	clear: both;
+	border-bottom: 5px solid #1357A8 !important;
+	margin-top: 25px;
+}
+
+.report-header .border-thin {
+	clear: both;
+	border-bottom: 2px solid #1357A8 !important;
+	margin-top: 3px;
+}
+ 
+.report-footer .border-thick {
+	clear: both;
+	border-bottom: 5px solid #1357A8 !important;
+	margin-top: 3px;
+}
+
+.report-footer .border-thin {
+	clear: both;
+	border-bottom: 2px solid #1357A8 !important;
+	margin-top: 25px;
+}
+
+.h2-description {
+	color: #666;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+h2 + .h2-description {
+	margin-top: -10px;
+}
+
+.report-container h2 {
+	color: #000 !important;
+}
+
+.report-details {
+	line-height: 24px;
+}
+
+.report-details {
+	background: #F5F5F5;
+	border: 1px solid #ccc;
+}
+
+.report-details > div:nth-child(2n) {
+	background: #fff;
+}
+
+.report-details > div {
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+
+.report-details > div:last-child {
+	border-bottom: none;
+}
+
+.report-details .details-value {
+	width: 85%;
+	float: left;
+	padding: 2px 8px;
+	box-sizing: border-box;
+}
+
+.report-details .details-label {
+	width: 15%;
+	float: left;
+	color: #666;
+	padding: 2px 8px;
+	box-sizing: border-box;
+	border-right: 1px solid #ccc;
+	text-align: right;
+}
+
+.header-text {
+	border-bottom: 2px solid #666;
+	margin-bottom: 30px;
+}
+
+.header-text p {
+	color: #222;
+}
+
+.vector-map {
+	overflow: auto;
+}
+
+#analyze-sources span.source {
+	border-radius: 0;
+	margin-left:10px;
+	margin-right:0;
+	padding:0;
+	position:relative;
+
+	min-width: 145px !important;
+	max-width: 98% !important;
+}
+
+#analyze-sources span.source:first-child {
+	margin-left:0
+}
+
+#analyze-sources span.source a.sources-configure {
+	display: none;
+}
+
+#analyze-sources {
+	margin-bottom: 0px;
+}
+
+.report-header-spacer {
+	height: 50px;
+	background: #fff;
+}
+
+#clickdesk-appendable-bubble, 
+.clickdesk { 
+	display: none !important;
+}
+
+.distribution-search {
+	margin-bottom: 30px;
+}
+
+.distribution-search a {
+	border: 1px solid #DCDAD6;
+	padding: 15px;
+	padding-left: 16px
+}
+
+.distribution-search a.distribution-bing {
+	padding-left: 17px;
+	padding-right: 16px;
+}
+
+.distribution-search a:not(:first-child)  {
+	border-left: 0px;
+}
+
+.main .container {
+	padding-bottom: 0;
+}
+
+.not-printable {
+	padding-bottom: 30px;
+}
+
+#geolocation {
+	width: 27%; 
+	float: left;
+	margin-top: 15px;
+}
+
+.vector-map {
+	width: 70%; 
+	margin-left: 10px; 
+	float: left; 
+	overflow: auto;
+}
+
+.navbar-search {
+	display: none !important;
+}
+
+#wrapper,
+#page-wrapper {
+	padding: 0 !important;
+}

@@ -1,0 +1,29 @@
+<div class="result" data-id="{{id}}">
+	<div class="result-content clearfix">
+		{{#image}}
+			<a class="result-feature-image" href="{{url}}" target="_blank">
+				<img src="{{image}}">
+			</a>
+		{{/image}}
+		<div class="result-content-text">						
+			<strong class="result-title"><a href="{{url}}" target="_blank">{{title}}</a></strong>
+			{{#summary}}
+				<p class="result-summary">{{summary}}</p>
+			{{/summary}}
+		</div>
+	</div>
+	<div class="result-meta">
+		<!--
+		<div class="result-favourite">
+			<i class="fa fa-star"></i>
+		</div>
+		-->
+		<!--
+		<div class="result-share">
+			<i class="fa fa-share-alt"></i>
+		</div>
+		-->
+		<div class="result-company">{{company}}</div>
+		<div class="result-when">{{when}}</div>
+	</div>
+</div>

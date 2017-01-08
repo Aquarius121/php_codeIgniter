@@ -1,0 +1,15 @@
+#!/bin/bash 
+
+if [[ $# -lt 1 ]]
+then
+	echo "usage: create <type> <args>"
+	exit 1
+fi
+
+if [[ -f "raw/$1/create" ]]
+then
+	"raw/$1/create" ${@:2}
+fi
+
+
+

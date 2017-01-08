@@ -1,0 +1,40 @@
+/* This file contains CSS related specifically to reseller dashboard page */
+
+.overview-table {
+   border: 1px solid #CCCCCC;
+   border-radius: 3px !important;
+   color: #666666;
+   font-size: 13px !important;
+   margin-bottom: 0px !important;
+}
+
+.overview-table thead {
+   background: none repeat scroll 0 0 #F1F1F1
+}
+
+.overview-table th {
+   font-size: 13px !important;
+   padding: 10px 1px !important;
+}
+
+.overview-grid .row-fluid .span3 {
+   width: 27% !important
+}
+
+.overview-grid .row-fluid .span2 {
+   width: 12.5% !important
+}
+
+.overview-grid .row-fluid .span1 {
+   width: 8.6%
+}
+
+.rm-tabs-block .og-header {
+   background: none repeat scroll 0 0 #F1F1F1;
+   color: #333333;
+   font-weight: 600;
+   padding: 10px 0 0 0;
+   text-align: center;
+   border-bottom: 1px solid #CCCCCC;
+}
+

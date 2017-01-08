@@ -1,0 +1,362 @@
+{
+  "metadata": {
+    "version": 2,
+    "www_path_prefix": "http://www.crunchbase.com/",
+    "api_path_prefix": "http://api.crunchbase.com/v/2/",
+    "image_path_prefix": "https://res.cloudinary.com/crunchbase-production/"
+  },
+  "data": {
+    "uuid": "20b931766f5041cae09e1f7aa7a1a49f",
+    "type": "Organization",
+    "properties": {
+      "role_company": true,
+      "description": "Founded in 2011 by Oleg Rogynskyy, Semantria provides a scalable cloud-based sentiment and text analytics service for small to medium sized businesses. Semantria is a joint venture, co-founded by the leading text analytics technology provider Lexalytics.\n\nSemantria gives decision makers access to actionable insight, drawn from any amount of unstructured text. Sentiment, categories, themes, entities and more are extracted from unstructured text by [Semantria]\n",
+      "short_description": "Semantria is a company providing scalable cloud based sentiment and text analytics services for small to medium sized businesses.",
+      "permalink": "semantria",
+      "primary_role": "company",
+      "is_closed": false,
+      "closed_on_trust_code": 0,
+      "homepage_url": "http://semantria.com",
+      "name": "Semantria",
+      "founded_on_day": 1,
+      "founded_on_month": 1,
+      "founded_on_year": 2011,
+      "founded_on": "2011-01-01",
+      "founded_on_trust_code": 4,
+      "num_employees_max": 50,
+      "num_employees_min": 11,
+      "closed_on_day": null,
+      "closed_on_month": null,
+      "closed_on_year": null,
+      "closed_on": null,
+      "email_address": "info@semantria.com",
+      "created_at": 1357959834,
+      "updated_at": 1418925116,
+      "total_funding_usd": 0,
+      "number_of_investments": 0,
+      "number_of_employees": 50
+    },
+    "relationships": {
+      "current_team": {
+        "paging": {
+          "total_items": 6,
+          "first_page_url": "http://api.crunchbase.com/v/2/organization/semantria/current_team",
+          "sort_order": "custom"
+        },
+        "items": [
+          {
+            "first_name": "George",
+            "last_name": "Kozlov",
+            "title": "CTO/Co-Founder",
+            "started_on": "2011-01-01",
+            "path": "person/george-kozlov",
+            "created_at": 1358314819,
+            "updated_at": 1397989680
+          },
+          {
+            "first_name": "Marc",
+            "last_name": "Mastrocola",
+            "title": "Operations Director",
+            "started_on": "2011-01-01",
+            "path": "person/marc-mastrocola",
+            "created_at": 1357959834,
+            "updated_at": 1397989640
+          },
+          {
+            "first_name": "Rami",
+            "last_name": "Nuseir",
+            "title": "Marketing Director",
+            "started_on": "2011-01-01",
+            "path": "person/rami-nuseir",
+            "created_at": 1357959834,
+            "updated_at": 1397989640
+          },
+          {
+            "first_name": "Oleg",
+            "last_name": "Rogynskyy",
+            "title": "CEO/Founder",
+            "started_on": "2011-01-01",
+            "path": "person/oleg-rogynskyy",
+            "created_at": 1296039582,
+            "updated_at": 1398010438
+          },
+          {
+            "first_name": "Jodi",
+            "last_name": "Roy",
+            "title": "Account Director",
+            "started_on": "2012-10-01",
+            "path": "person/jodi-roy",
+            "created_at": 1358314819,
+            "updated_at": 1397989680
+          },
+          {
+            "first_name": "Haseeb",
+            "last_name": "Tahir",
+            "title": "VP Business Development",
+            "started_on": "2011-01-01",
+            "path": "person/haseeb-tahir",
+            "created_at": 1357959834,
+            "updated_at": 1397989640
+          }
+        ]
+      },
+      "acquired_by": {
+        "paging": {
+          "total_items": 1,
+          "first_page_url": "http://api.crunchbase.com/v/2/organization/semantria/acquired_by",
+          "sort_order": "created_at DESC"
+        },
+        "items": [
+          {
+            "announced_on": "2014-07-14",
+            "type": "Acquisition",
+            "name": "Acquisition",
+            "path": "acquisition/2e3be423a52304202be6e17e2dbb8f6e",
+            "created_at": 1405381979,
+            "updated_at": 1405382027
+          }
+        ]
+      },
+      "offices": {
+        "paging": {
+          "total_items": 2,
+          "first_page_url": "http://api.crunchbase.com/v/2/organization/semantria/offices",
+          "sort_order": "created_at DESC"
+        },
+        "items": [
+          {
+            "type": "Address",
+            "name": "Montreal Office",
+            "street_1": "1751 Rue Richardson",
+            "street_2": "Studio 3529",
+            "postal_code": "H3K 1G6",
+            "city": "Montr\u00e9al",
+            "city_path": "location/montr\u00e9al/9496c0dd5d97eaf1fde0ee6ad6b41f48",
+            "region": "Quebec",
+            "region_path": "location/quebec/c4cd6f0c10e6c97e3e20e5be9405c146",
+            "country": "Canada",
+            "country_path": "location/canada/1b3d6217ec761b13c47aaca49b466a2c",
+            "latitude": null,
+            "longitude": null,
+            "created_at": 1372271070,
+            "updated_at": 1407371277
+          },
+          {
+            "type": "Address",
+            "name": "Amherst Office",
+            "street_1": "48 N. Pleasant Street",
+            "street_2": "Unit 301",
+            "postal_code": "01002",
+            "city": "Amherst",
+            "city_path": "location/amherst/55c7f2c536819adb7eaff8655cee82a1",
+            "region": "Massachusetts",
+            "region_path": "location/massachusetts/98c62fd921489dd7d767b27fa0816b97",
+            "country": "United States",
+            "country_path": "location/united-states/f110fca2105599f6996d011c198b3928",
+            "latitude": 42.369975,
+            "longitude": -72.534184,
+            "created_at": 1357931034,
+            "updated_at": 1397991270
+          }
+        ]
+      },
+      "headquarters": {
+        "paging": {
+          "total_items": 1,
+          "first_page_url": "http://api.crunchbase.com/v/2/organization/semantria/headquarters",
+          "sort_order": "created_at DESC"
+        },
+        "items": [
+          {
+            "type": "Address",
+            "name": "Amherst Office",
+            "street_1": "48 N. Pleasant Street",
+            "street_2": "Unit 301",
+            "postal_code": "01002",
+            "city": "Amherst",
+            "city_path": "location/amherst/55c7f2c536819adb7eaff8655cee82a1",
+            "region": "Massachusetts",
+            "region_path": "location/massachusetts/98c62fd921489dd7d767b27fa0816b97",
+            "country": "United States",
+            "country_path": "location/united-states/f110fca2105599f6996d011c198b3928",
+            "latitude": 42.369975,
+            "longitude": -72.534184,
+            "created_at": 1357931034,
+            "updated_at": 1397991270
+          }
+        ]
+      },
+      "funding_rounds": {
+        "paging": {
+          "total_items": 1,
+          "first_page_url": "http://api.crunchbase.com/v/2/organization/semantria/funding_rounds",
+          "sort_order": "created_at DESC"
+        },
+        "items": [
+          {
+            "type": "FundingRound",
+            "name": "Semantria raises 0 in seed round",
+            "path": "funding-round/eac47445709ae19603b495d71d594c7d",
+            "created_at": 1380524539,
+            "updated_at": 1398010071
+          }
+        ]
+      },
+      "categories": {
+        "paging": {
+          "total_items": 7,
+          "first_page_url": "http://api.crunchbase.com/v/2/organization/semantria/categories",
+          "sort_order": "created_at DESC"
+        },
+        "items": [
+          {
+            "type": "Category",
+            "name": "Natural Language Processing",
+            "uuid": "789bbbefc46e1532a68df17da87090ea",
+            "path": "category/natural language processing/789bbbefc46e1532a68df17da87090ea",
+            "created_at": 1397980727,
+            "updated_at": 1419332589
+          },
+          {
+            "type": "Category",
+            "name": "Small and Medium Businesses",
+            "uuid": "a146d2f44b22453af8bde671e3182112",
+            "path": "category/small and medium businesses/a146d2f44b22453af8bde671e3182112",
+            "created_at": 1397980727,
+            "updated_at": 1420307677
+          },
+          {
+            "type": "Category",
+            "name": "Developer APIs",
+            "uuid": "371b7b2c75fb9c0017785a24bed20453",
+            "path": "category/developer ap-is/371b7b2c75fb9c0017785a24bed20453",
+            "created_at": 1397980727,
+            "updated_at": 1420006462
+          },
+          {
+            "type": "Category",
+            "name": "Text Analytics",
+            "uuid": "e7acbc9932c74c8809ed8fae63eb2559",
+            "path": "category/text analytics/e7acbc9932c74c8809ed8fae63eb2559",
+            "created_at": 1397980727,
+            "updated_at": 1418463649
+          },
+          {
+            "type": "Category",
+            "name": "Software",
+            "uuid": "c08b5441a05b9777b7a6012728caddd9",
+            "path": "category/software/c08b5441a05b9777b7a6012728caddd9",
+            "created_at": 1397980727,
+            "updated_at": 1420372179
+          },
+          {
+            "type": "Category",
+            "name": "Data Mining",
+            "uuid": "9c453c6c2fe97f99eed3d39d6a05cb3a",
+            "path": "category/data mining/9c453c6c2fe97f99eed3d39d6a05cb3a",
+            "created_at": 1397980726,
+            "updated_at": 1420022451
+          },
+          {
+            "type": "Category",
+            "name": "Opinions",
+            "uuid": "69425b454d7f99f011a6cd629f735aad",
+            "path": "category/opinions/69425b454d7f99f011a6cd629f735aad",
+            "created_at": 1397980726,
+            "updated_at": 1416825038
+          }
+        ]
+      },
+      "founders": {
+        "paging": {
+          "total_items": 2,
+          "first_page_url": "http://api.crunchbase.com/v/2/organization/semantria/founders",
+          "sort_order": "created_at DESC"
+        },
+        "items": [
+          {
+            "type": "Person",
+            "name": "George Kozlov",
+            "path": "person/george-kozlov",
+            "created_at": 1358314819,
+            "updated_at": 1397989680
+          },
+          {
+            "type": "Person",
+            "name": "Oleg Rogynskyy",
+            "path": "person/oleg-rogynskyy",
+            "created_at": 1296039582,
+            "updated_at": 1398010438
+          }
+        ]
+      },
+      "primary_image": {
+        "paging": {
+          "total_items": 1,
+          "first_page_url": "http://api.crunchbase.com/v/2/organization/semantria/primary_image",
+          "sort_order": "created_at DESC"
+        },
+        "items": [
+          {
+            "type": "ImageAsset",
+            "title": null,
+            "path": "image/upload/v1397194700/4673aa2c8f851dc968b7b98af99dca64.jpg",
+            "created_at": 1398018540,
+            "updated_at": 1398018540
+          }
+        ]
+      },
+      "websites": {
+        "paging": {
+          "total_items": 6,
+          "first_page_url": "http://api.crunchbase.com/v/2/organization/semantria/websites",
+          "sort_order": "created_at DESC"
+        },
+        "items": [
+          {
+            "url": "http://www.linkedin.com/company/2491793",
+            "type": "WebPresence",
+            "title": "linkedin",
+            "created_at": 1406411479,
+            "updated_at": 1406411479
+          },
+          {
+            "url": "https://angel.co/semantria",
+            "type": "WebPresence",
+            "title": "angellist",
+            "created_at": 1397877760,
+            "updated_at": 2014
+          },
+          {
+            "url": "http://www.quora.com/semantria",
+            "type": "WebPresence",
+            "title": "quora",
+            "created_at": 1397877760,
+            "updated_at": 2014
+          },
+          {
+            "url": "http://www.facebook.com/Semantria",
+            "type": "WebPresence",
+            "title": "facebook",
+            "created_at": 1397877760,
+            "updated_at": 2014
+          },
+          {
+            "url": "http://twitter.com/Semantria",
+            "type": "WebPresence",
+            "title": "twitter",
+            "created_at": 1357931034,
+            "updated_at": 1409432964
+          },
+          {
+            "url": "http://semantria.com",
+            "type": "WebPresence",
+            "title": "homepage",
+            "created_at": 1357931034,
+            "updated_at": 1397987850
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# cd to base
+cd $(dirname ${0});
+
+# update the version string based on commit
+echo -n "$(git log --format=%h -n 1)" > version;
+echo "update: $(cat version)";
+
+# test for uglify support
+echo | uglifyjs &> /dev/null || exit 1;
+echo | uglifycss &> /dev/null || exit 1;
+
+for file in $(find assets -type f -name '*.js' ! -wholename 'assets/loader*'); do 
+	if [[ ! -f "${file}.gz" ]] || [[ "${file}.gz" -ot "${file}" ]]; then
+		echo "update: ${file}";
+		uglifyjs "${file}" --mangle --compress 2>/dev/null | gzip --no-name > "${file}.gz";
+		touch -r "${file}" "${file}.gz"		
+	fi
+done
+
+for file in $(find assets -type f -name '*.css' ! -wholename 'assets/loader*'); do 
+	if [[ ! -f "${file}.gz" ]] || [[ "${file}.gz" -ot "${file}" ]]; then
+		echo "update: ${file}";
+		uglifycss "${file}" 2>/dev/null | gzip --no-name > "${file}.gz";
+		touch -r "${file}" "${file}.gz"
+	fi
+done
+
+# remove any old asset loader files
+rm assets/loader/*.css
+rm assets/loader/*.js
+rm assets/loader/*.gz
+
+if [[ ! -f "server-id" ]]
+then
+	# generate a random 8 character server id
+	echo -n $(dd if=/dev/urandom bs=2048 count=1 status=noxfer 2>/dev/null | \
+		md5sum | cut -c 1-8) > server-id
+fi
+
+# save out the latest crontab
+crontab -l > "raw/crontab-$(cat 'server-id')"

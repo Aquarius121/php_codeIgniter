@@ -1,0 +1,1 @@
+<?= $ci->load->view('shared/partials/packages-table') ?>

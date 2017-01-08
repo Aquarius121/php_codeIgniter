@@ -1,0 +1,21 @@
+#!/usr/local/bin/node
+
+var h2dx = require('./dist/html-docx.js');
+var fs   = require('fs');
+
+var stdin = process.stdin,
+    stdout = process.stdout,
+    inputChunks = [];
+
+stdin.resume();
+stdin.setEncoding('utf8');
+
+stdin.on('data', function(chunk) {
+	inputChunks.push(chunk);
+});
+
+stdin.on('end', function () {
+	var inputData = inputChunks.join();
+	var buffer = h2dx.asBlob(inputData);
+	stdout.write(buffer);
+});

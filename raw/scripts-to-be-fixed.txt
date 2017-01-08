@@ -1,0 +1,371 @@
+
+admin/nr_builder/mynewsdesk/auto_built_newsrooms.php-			
+admin/nr_builder/mynewsdesk/auto_built_newsrooms.php-			$('#country').on('change', function(ev){
+admin/nr_builder/mynewsdesk/auto_built_newsrooms.php-				var v = this.value;
+admin/nr_builder/mynewsdesk/auto_built_newsrooms.php-				var loc = 'http://' + window.location.hostname + window.location.pathname;
+admin/nr_builder/mynewsdesk/auto_built_newsrooms.php-				loc += "?filter_country=" + v;
+
+admin/nr_builder/mynewsdesk/main.php-
+admin/nr_builder/mynewsdesk/main.php-					$('#category_id').on('change', function(ev){
+admin/nr_builder/mynewsdesk/main.php-						var v = this.value;
+admin/nr_builder/mynewsdesk/main.php-						var loc = "admin/nr_builder/mynewsdesk/all";
+admin/nr_builder/mynewsdesk/main.php-						loc += "?filter_category=" + v;
+
+admin/nr_builder/owler/main.php-
+admin/nr_builder/owler/main.php-					$('#category_id').on('change', function(ev){
+admin/nr_builder/owler/main.php-						var v = this.value;
+admin/nr_builder/owler/main.php-						var loc = "admin/nr_builder/owler/all";
+admin/nr_builder/owler/main.php-						loc += "?filter_category=" + v;
+
+admin/nr_builder/pr_co/main.php-
+admin/nr_builder/pr_co/main.php-					$('#category_id').on('change', function(ev){
+admin/nr_builder/pr_co/main.php-						var v = this.value;
+admin/nr_builder/pr_co/main.php-						var loc = "admin/nr_builder/pr_co/all";
+admin/nr_builder/pr_co/main.php-						loc += "?filter_category=" + v;
+
+admin/nr_builder/marketwired/main.php-
+admin/nr_builder/marketwired/main.php-					$('#category_id').on('change', function(ev){
+admin/nr_builder/marketwired/main.php-						var v = this.value;
+admin/nr_builder/marketwired/main.php-						var loc = "admin/nr_builder/marketwired/all";
+admin/nr_builder/marketwired/main.php-						loc += "?filter_category=" + v;
+
+admin/nr_builder/stats/main.php-	$("a.stats-table-price").on("click", function(ev) {
+admin/nr_builder/stats/main.php-		ev.preventDefault();
+admin/nr_builder/stats/main.php-		var _this = $(this);
+admin/nr_builder/stats/main.php-		var t_date = _this.data("date");
+admin/nr_builder/stats/main.php-		var t_source = _this.data("source");
+
+admin/nr_builder/sales_agent/list.php-
+admin/nr_builder/sales_agent/list.php-$("a.transaction-count").on("click", function(ev) {
+admin/nr_builder/sales_agent/list.php-	ev.preventDefault();
+admin/nr_builder/sales_agent/list.php-	var _this = $(this);
+admin/nr_builder/sales_agent/list.php-	var id = _this.data("id");
+
+admin/nr_builder/businesswire/main.php-
+admin/nr_builder/businesswire/main.php-					$('#category_id').on('change', function(ev){
+admin/nr_builder/businesswire/main.php-						var v = this.value;
+admin/nr_builder/businesswire/main.php-						var loc = "admin/nr_builder/businesswire/all";
+admin/nr_builder/businesswire/main.php-						loc += "?filter_category=" + v;
+
+admin/nr_builder/crunchbase/main.php-
+admin/nr_builder/crunchbase/main.php-					$('#category_id').on('change', function(ev){
+admin/nr_builder/crunchbase/main.php-						var v = this.value;
+admin/nr_builder/crunchbase/main.php-						var loc = "admin/nr_builder/crunchbase/all";
+admin/nr_builder/crunchbase/main.php-						loc += "?filter_category=" + v;
+
+admin/nr_builder/newswire_ca/main.php-
+admin/nr_builder/newswire_ca/main.php-					$('#category_id').on('change', function(ev){
+admin/nr_builder/newswire_ca/main.php-						var v = this.value;
+admin/nr_builder/newswire_ca/main.php-						var loc = "admin/nr_builder/newswire_ca/all";
+admin/nr_builder/newswire_ca/main.php-						loc += "?filter_category=" + v;
+
+admin/nr_builder/prweb/main.php-
+admin/nr_builder/prweb/main.php-					$('#category_id').on('change', function(ev){
+admin/nr_builder/prweb/main.php-						var v = this.value;
+admin/nr_builder/prweb/main.php-						var loc = "admin/nr_builder/prweb/all";
+admin/nr_builder/prweb/main.php-						loc += "?filter_category=" + v;
+
+admin/nr_builder/topseos/main.php-
+admin/nr_builder/topseos/main.php-					$('#category_id').on('change', function(ev){
+admin/nr_builder/topseos/main.php-						var v = this.value;
+admin/nr_builder/topseos/main.php-						var loc = "admin/nr_builder/topseos/all";
+admin/nr_builder/topseos/main.php-						loc += "?filter_category=" + v;
+
+admin/writing/pitch/pending_writing.php-					$("a.pending_log").on("click", function(ev) {
+admin/writing/pitch/pending_writing.php-						ev.preventDefault();
+admin/writing/pitch/pending_writing.php-						var id = $(this).data("id");						
+admin/writing/pitch/pending_writing.php-						var content_url = "admin/writing/pitch/pending_writing/load_pending_modal/" + id;
+admin/writing/pitch/pending_writing.php-						var modal = $("#<?= $vd->pending_log_modal_id ?>");
+
+admin/writing/pitch/review_single.php-					
+admin/writing/pitch/review_single.php-					$("#marker-buttons .btn-marker").on("click", function() {
+admin/writing/pitch/review_single.php-						var editor = CKEDITOR.instances["pitch_text"];
+admin/writing/pitch/review_single.php-						var create = CKEDITOR.plugins.placeholder.createPlaceholder;
+admin/writing/pitch/review_single.php-						var text = $(this).val();
+								
+admin/writing/orders/list-review.php-$(".view-conversation").on("click", function(ev) {
+admin/writing/orders/list-review.php-	ev.preventDefault();
+admin/writing/orders/list-review.php-	
+
+admin/writing/orders/list-pending.php-$(".view-conversation").on("click", function(ev) {
+admin/writing/orders/list-pending.php-	ev.preventDefault();
+admin/writing/orders/list-pending.php-	
+
+admin/settings/ip_block.php-			
+admin/settings/ip_block.php-			$(document).on("click", ".a-submit", function() {
+admin/settings/ip_block.php-				$(this).parents("form").submit();
+admin/settings/ip_block.php-				return false;
+admin/settings/ip_block.php-			});
+
+admin/settings/cat_to_beat.php-			
+admin/settings/cat_to_beat.php-			$(document).on("click", ".a-submit", function() {
+admin/settings/cat_to_beat.php-				$(this).parents("form").submit();
+admin/settings/cat_to_beat.php-				return false;
+admin/settings/cat_to_beat.php-			});
+
+admin/header.php-		CKEDITOR_BASEPATH = <?= json_encode("{$vd->assets_base}lib/ckeditor/") ?>;
+admin/header.php-		NR_COMPANY_ID = <?= json_encode($ci->newsroom->company_id) ?>;
+admin/header.php-		RELATIVE_URI = <?= json_encode($ci->uri->uri_string) ?>;
+admin/header.php-		ASSETS_VERSION = <?= json_encode($vd->version) ?>;
+
+admin/contact/pitch_wizard_order/review_single_list.php-            var all_checkbox = $("#all-checkbox");
+admin/contact/pitch_wizard_order/review_single_list.php-            var results = $("#selectable-results");
+admin/contact/pitch_wizard_order/review_single_list.php-            
+admin/contact/pitch_wizard_order/review_single_list.php-            all_checkbox.on("change", function() {
+admin/contact/pitch_wizard_order/review_single_list.php-            	results.find("input.selectable").prop("checked", 
+
+admin/contact/pitch_wizard_order/rejected_list.php-					
+admin/contact/pitch_wizard_order/rejected_list.php-					$(".reupload a.csv").on("click", function(ev) {
+admin/contact/pitch_wizard_order/rejected_list.php-						ev.preventDefault();
+admin/contact/pitch_wizard_order/rejected_list.php-						var id = $(this).data("id");						
+admin/contact/pitch_wizard_order/rejected_list.php-						var content_url = "admin/contact/pitch_wizard_order/load_upload_modal/" + id + "/1";
+
+admin/contact/pitch_wizard_order/upload_list.php-						
+admin/contact/pitch_wizard_order/upload_list.php-						$(".upload_td a.csv").on("click", function(ev) {
+admin/contact/pitch_wizard_order/upload_list.php-							ev.preventDefault();
+admin/contact/pitch_wizard_order/upload_list.php-							var id = $(this).data("id");						
+admin/contact/pitch_wizard_order/upload_list.php-							var content_url = "admin/contact/pitch_wizard_order/load_upload_modal/" + id;
+
+admin/contact/list/partials/contact_listing.php-				
+admin/contact/list/partials/contact_listing.php-				var all_checkbox = $("#all-checkbox");
+admin/contact/list/partials/contact_listing.php-				var results = $("#selectable-results");
+admin/contact/list/partials/contact_listing.php-				
+admin/contact/list/partials/contact_listing.php-				all_checkbox.on("change", function() {
+
+admin/contact/media_database/list.php-	
+admin/contact/media_database/list.php-	var all_checkbox = $("#all-checkbox");
+admin/contact/media_database/list.php-	var results = $("#selectable-results");
+admin/contact/media_database/list.php-	
+admin/contact/media_database/list.php-	all_checkbox.on("change", function() {
+
+admin/contact/media_database/list_container.php-		
+admin/contact/media_database/list_container.php-		var all_checkbox = $("#all-checkbox");
+admin/contact/media_database/list_container.php-		var results = $("#selectable-results");
+admin/contact/media_database/list_container.php-		
+admin/contact/media_database/list_container.php-		all_checkbox.on("change", function() {
+
+manage/newsroom/contact-edit.php-								window.init_editor($("#description"), { height: 400 });
+manage/newsroom/contact-edit.php-								</script>
+manage/newsroom/contact-edit.php-								<p class="help-block">Describe or talk about this contact.</p>
+
+manage/newsroom/social.php-$("a.help-block-link").on("click", function(ev) {
+manage/newsroom/social.php-	ev.preventDefault();
+manage/newsroom/social.php-	var id = $(this).data("id");
+manage/newsroom/social.php-	var title = $(this).data("title");
+
+manage/newsroom/company.php-								window.init_editor($("#description"), { height: 400 });
+manage/newsroom/company.php-								</script>
+manage/newsroom/company.php-							</div>
+
+manage/newsroom/company.php-$("a.help-block-link").on("click", function(ev) {
+manage/newsroom/company.php-	ev.preventDefault();
+manage/newsroom/company.php-	var id = $(this).data("id");
+manage/newsroom/company.php-	var title = $(this).data("title");
+
+manage/analyze/report/content.php-			$(window.update_sources_bar = function() {
+manage/analyze/report/content.php-				var sources = $("#analyze-sources");
+manage/analyze/report/content.php-				var sources_width = sources.width();
+
+manage/analyze/report-generate.php-setTimeout(function() {
+manage/analyze/report-generate.php-	var return_url = <?= json_encode($vd->return_url) ?>;
+manage/analyze/report-generate.php-	var generate_url = <?= json_encode($vd->generate_url) ?>;
+
+manage/analyze/email-view.php-var hid = $.create("input");
+manage/analyze/email-view.php-var search_form = $(".navbar-search");
+manage/analyze/email-view.php-hid.attr('type', 'hidden');
+manage/analyze/email-view.php-hid.attr('name', 'campaign_id');
+
+manage/analyze/email-view-search.php-var hid = $.create("input");
+manage/analyze/email-view-search.php-var search_form = $(".navbar-search");
+manage/analyze/email-view-search.php-hid.attr('type', 'hidden');
+manage/analyze/email-view-search.php-hid.attr('name', 'campaign_id');
+
+manage/contact/list-edit.php-$(document).on("click", ".list-history", function(ev) {
+manage/contact/list-edit.php-	ev.preventDefault();
+manage/contact/list-edit.php-	var id = $(this).data("id");
+
+manage/contact/partials/contact_listing.php-				
+manage/contact/partials/contact_listing.php-				var all_checkbox = $("#all-checkbox");
+manage/contact/partials/contact_listing.php-				var results = $("#selectable-results");
+manage/contact/partials/contact_listing.php-				
+manage/contact/partials/contact_listing.php-				all_checkbox.on("change", function() {
+
+manage/contact/partials/list_listing.php-
+manage/contact/partials/list_listing.php-$(document).on("click", ".list-history", function(ev) {
+manage/contact/partials/list_listing.php-
+manage/contact/partials/list_listing.php-	ev.preventDefault();
+manage/contact/partials/list_listing.php-	var id = $(this).data("id");
+
+manage/contact/campaign_image_upload_callback.php-
+manage/contact/campaign_image_upload_callback.php-(function() {
+manage/contact/campaign_image_upload_callback.php-
+manage/contact/campaign_image_upload_callback.php-	var callFunction = window.parent.CKEDITOR.tools.callFunction;
+manage/contact/campaign_image_upload_callback.php-	callFunction(<?= json_encode((int) $ci->input->get('CKEditorFuncNum')) ?>, 
+
+manage/contact/campaign-edit.php-								window.init_editor($("#content"), { 
+manage/contact/campaign-edit.php-									filebrowserUploadUrl: <?= json_encode($ci->newsroom->url('manage/contact/campaign/upload_image')) ?>,
+manage/contact/campaign-edit.php-									extraAllowedContent: 'style a img p b span div i blockquote q(ei-*)',
+manage/contact/campaign-edit.php-									extraPlugins: 'filebrowser,image',
+
+manage/contact/media_database/list.php-	
+manage/contact/media_database/list.php-	var all_checkbox = $("#all-checkbox");
+manage/contact/media_database/list.php-	var results = $("#selectable-results");
+manage/contact/media_database/list.php-	
+manage/contact/media_database/list.php-	all_checkbox.on("change", function() {
+
+manage/contact/list.php-$(document).on("click", ".pw-order-detail", function(ev) {
+manage/contact/list.php-	ev.preventDefault();
+manage/contact/list.php-	var id = $(this).data("id");
+
+manage/contact/campaign.php-$(document).on("click", ".pw-order-detail a", function(ev) {
+manage/contact/campaign.php-	ev.preventDefault();
+manage/contact/campaign.php-	var id = $(this).data("id");
+
+manage/publish/partials/autosave-callback.php-	window.autosave.on_save.push(function(data) {
+manage/publish/partials/autosave-callback.php-		var make_thumb_array = function() {
+manage/publish/partials/autosave-callback.php-			
+
+manage/publish/partials/distribution/customize/state.php-			(function() {
+manage/publish/partials/distribution/customize/state.php-				var select = $("#dist-cust-state");
+
+manage/publish/partials/pin-content-js.php-(function() {
+manage/publish/partials/pin-content-js.php-	if (window.bootbox !== undefined) return;
+manage/publish/partials/pin-content-js.php-	var element = document.createElement("script");
+manage/publish/partials/pin-content-js.php-	var src = <?= json_encode(concat($vd->assets_base, "lib/bootbox.min.js")) ?>;
+
+manage/publish/partials/external-basic-information.php-							$("#summary").limit_length(<?= $ci->conf('summary_max_length') ?>, 
+manage/publish/partials/external-basic-information.php-								$("#summary_countdown_text"), 
+manage/publish/partials/external-basic-information.php-								$("#summary_countdown"));
+manage/publish/partials/external-basic-information.php-							
+
+manage/publish/news-edit.php-								$("#summary").limit_length(<?= $ci->conf('summary_max_length') ?>, 
+manage/publish/news-edit.php-									$("#summary_countdown_text"), 
+manage/publish/news-edit.php-									$("#summary_countdown"));
+manage/publish/news-edit.php-								
+manage/publish/news-edit.php-								window.init_editor($("#content"), { height: 400 });
+manage/publish/news-edit.php-								</script>
+manage/publish/news-edit.php-							</div>
+
+reseller/publish/partials/archive_confirm_box.php-	$('#bt_yes').click(function(){		
+reseller/publish/partials/archive_confirm_box.php-		archive_pr_writing();
+reseller/publish/partials/archive_confirm_box.php-		var ch= $('#' + arch_chbox_id);
+reseller/publish/partials/archive_confirm_box.php-		ch.attr("checked", false);
+reseller/publish/partials/archive_confirm_box.php-	});
+
+reseller/publish/index.php-	$(".rejected_log_td a").on("click", function(ev) {
+reseller/publish/index.php-		ev.preventDefault();
+reseller/publish/index.php-		var id = $(this).data("id");
+
+website/news-center/listing.php-window.__on_nav_callback = window.__on_nav_callback || [];
+website/news-center/listing.php-window.__on_nav_callback.push(function(local_url) {
+website/news-center/listing.php-	// the text on the filter drop down
+
+website/pages/specialoffer.php-<main class="main why-us-section" role="main"
+website/pages/specialoffer.php-	style="padding-bottom: 30px">
+website/pages/specialoffer.php-	<div class="container">
+website/pages/specialoffer.php-		<div class="row">
+
+website/pages/planner/one.php-//plugin bootstrap minus and plus
+website/pages/planner/one.php-//http://jsfiddle.net/laelitenetwork/puJ6G/
+website/pages/planner/one.php-$('.btn-number').click(function(e){
+website/pages/planner/one.php-    e.preventDefault();
+
+writing/draft/review.php-	$("#customer_action_approve").click(function() {
+writing/draft/review.php-		$("#desc_div").addClass("hidden");
+writing/draft/review.php-	});
+
+writing/header.php-		CKEDITOR_BASEPATH = <?= json_encode("{$vd->assets_base}lib/ckeditor/") ?>;
+writing/header.php-		</script>
+writing/footer.php-	$(window).load(function() { 
+writing/footer.php-		$(".selectpicker").on_load_select();
+
+writing/prdetails/step2.php-					$("#backfromStep2").click(function() {
+
+writing/prdetails/step3.php-					$("#backfromStep3").click(function() {
+application/views/admin/companies/newsroom_builder/paid_claims.php-			<script>
+application/views/admin/companies/newsroom_builder/paid_claims.php:			$(document).ready(function() {
+application/views/admin/companies/newsroom_builder/paid_claims.php-				$('#all-checkbox').click(function(event) { 
+--
+application/views/admin/nr_builder/mynewsdesk/auto_built_newsrooms.php-					<script>
+application/views/admin/nr_builder/mynewsdesk/auto_built_newsrooms.php:						$(document).ready(function() {
+application/views/admin/nr_builder/mynewsdesk/auto_built_newsrooms.php-						    $('#all-checkbox').click(function(event) { 
+--
+application/views/admin/nr_builder/mynewsdesk/main.php-
+application/views/admin/nr_builder/mynewsdesk/main.php:					$(document).ready(function() {
+application/views/admin/nr_builder/mynewsdesk/main.php-					    $('#all-checkbox').click(function(event) {  //on click
+--
+application/views/admin/nr_builder/owler/auto_built_newsrooms.php-					<script>
+application/views/admin/nr_builder/owler/auto_built_newsrooms.php:						$(document).ready(function() {
+application/views/admin/nr_builder/owler/auto_built_newsrooms.php-						    $('#all-checkbox').click(function(event) { 
+--
+application/views/admin/nr_builder/owler/main.php-
+application/views/admin/nr_builder/owler/main.php:					$(document).ready(function() {
+application/views/admin/nr_builder/owler/main.php-					    $('#all-checkbox').click(function(event) {  //on click
+--
+application/views/admin/nr_builder/partials/claim_submissions_results.php-<script>
+application/views/admin/nr_builder/partials/claim_submissions_results.php:$(document).ready(function() {
+application/views/admin/nr_builder/partials/claim_submissions_results.php-	$('#all-checkbox').click(function(event) { 
+--
+application/views/admin/nr_builder/partials/verified_submissions_results.php-<script>
+application/views/admin/nr_builder/partials/verified_submissions_results.php:$(document).ready(function() {
+application/views/admin/nr_builder/partials/verified_submissions_results.php-	$('#all-checkbox').click(function(event) { 
+--
+application/views/admin/nr_builder/pr_co/auto_built_newsrooms.php-					<script>
+application/views/admin/nr_builder/pr_co/auto_built_newsrooms.php:						$(document).ready(function() {
+application/views/admin/nr_builder/pr_co/auto_built_newsrooms.php-						    $('#all-checkbox').click(function(event) { 
+--
+application/views/admin/nr_builder/pr_co/main.php-
+application/views/admin/nr_builder/pr_co/main.php:					$(document).ready(function() {
+application/views/admin/nr_builder/pr_co/main.php-					    $('#all-checkbox').click(function(event) {  //on click
+--
+application/views/admin/nr_builder/marketwired/auto_built_newsrooms.php-					<script>
+application/views/admin/nr_builder/marketwired/auto_built_newsrooms.php:						$(document).ready(function() {
+application/views/admin/nr_builder/marketwired/auto_built_newsrooms.php-						    $('#all-checkbox').click(function(event) { 
+--
+application/views/admin/nr_builder/marketwired/main.php-
+application/views/admin/nr_builder/marketwired/main.php:					$(document).ready(function() {
+application/views/admin/nr_builder/marketwired/main.php-					    $('#all-checkbox').click(function(event) {  //on click
+--
+application/views/admin/nr_builder/businesswire/auto_built_newsrooms.php-					<script>
+application/views/admin/nr_builder/businesswire/auto_built_newsrooms.php:						$(document).ready(function() {
+application/views/admin/nr_builder/businesswire/auto_built_newsrooms.php-						    $('#all-checkbox').click(function(event) { 
+--
+application/views/admin/nr_builder/businesswire/main.php-
+application/views/admin/nr_builder/businesswire/main.php:					$(document).ready(function() {
+application/views/admin/nr_builder/businesswire/main.php-					    $('#all-checkbox').click(function(event) {  //on click
+--
+application/views/admin/nr_builder/crunchbase/auto_built_newsrooms.php-					<script>
+application/views/admin/nr_builder/crunchbase/auto_built_newsrooms.php:						$(document).ready(function() {
+application/views/admin/nr_builder/crunchbase/auto_built_newsrooms.php-						    $('#all-checkbox').click(function(event) { 
+--
+application/views/admin/nr_builder/crunchbase/main.php-
+application/views/admin/nr_builder/crunchbase/main.php:					$(document).ready(function() {
+application/views/admin/nr_builder/crunchbase/main.php-					    $('#all-checkbox').click(function(event) {  //on click
+--
+application/views/admin/nr_builder/newswire_ca/auto_built_newsrooms.php-					<script>
+application/views/admin/nr_builder/newswire_ca/auto_built_newsrooms.php:						$(document).ready(function() {
+application/views/admin/nr_builder/newswire_ca/auto_built_newsrooms.php-						    $('#all-checkbox').click(function(event) { 
+--
+application/views/admin/nr_builder/newswire_ca/main.php-
+application/views/admin/nr_builder/newswire_ca/main.php:					$(document).ready(function() {
+application/views/admin/nr_builder/newswire_ca/main.php-					    $('#all-checkbox').click(function(event) {  //on click
+--
+application/views/admin/nr_builder/prweb/auto_built_newsrooms.php-					<script>
+application/views/admin/nr_builder/prweb/auto_built_newsrooms.php:						$(document).ready(function() {
+application/views/admin/nr_builder/prweb/auto_built_newsrooms.php-						    $('#all-checkbox').click(function(event) { 
+--
+application/views/admin/nr_builder/prweb/main.php-
+application/views/admin/nr_builder/prweb/main.php:					$(document).ready(function() {
+application/views/admin/nr_builder/prweb/main.php-					    $('#all-checkbox').click(function(event) {  //on click
+--
+application/views/admin/nr_builder/topseos/auto_built_newsrooms.php-					<script>
+application/views/admin/nr_builder/topseos/auto_built_newsrooms.php:						$(document).ready(function() {
+application/views/admin/nr_builder/topseos/auto_built_newsrooms.php-						    $('#all-checkbox').click(function(event) { 
+--
+application/views/admin/nr_builder/topseos/main.php-
+application/views/admin/nr_builder/topseos/main.php:					$(document).ready(function() {
+application/views/admin/nr_builder/topseos/main.php-					    $('#all-checkbox').click(function(event) {  //on click
+--
+application/views/website/partials/track-vwo.php-if(typeof(_vis_opt_settings_loaded) == "boolean" && typeof(_vis_opt_top_initialize) == "function") {
+application/views/website/partials/track-vwo.php:        _vis_opt_top_initialize(); vwo_$(document).ready(function() { _vis_opt_bottom_initialize(); });
+application/views/website/partials/track-vwo.php-}

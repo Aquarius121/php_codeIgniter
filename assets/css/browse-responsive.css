@@ -1,0 +1,148 @@
+@media only screen and (max-width: 920px) {
+
+	div.container {
+		width: 100%;
+	}
+
+	section.top-panel div.container {
+		margin: 0 10px;
+		width: auto;
+	}
+
+	section.top-panel {
+		min-width: 0;
+	}
+
+	header.org-header {
+		min-width: 0;
+	}
+
+	header.org-header > .row-fluid > div {
+		display: inline-block;
+		width: auto;
+		float: none;
+		overflow: hidden;
+		text-align: left;
+	}
+
+	section.top-panel div.container {
+		margin: 0 10px;
+		width: auto;
+	}
+
+	section.top-panel {
+		min-width: 0;
+	}
+
+	header.org-header {
+		min-width: 0;
+	}
+
+	header.org-header > .row-fluid > div {
+		display: inline-block;
+		width: auto;
+		float: none;
+		overflow: hidden;
+		text-align: left;
+	}
+
+	#content-container {
+		width: auto;
+	}
+
+	header.org-header > .row-fluid > .org-header-search {
+		display: none;
+	}
+
+	header.org-header > .row-fluid {
+		width: auto;
+		margin: auto;
+		text-align: center;
+	}
+
+	header.org-header .org-header-text h1 a {
+		min-width: 0;
+	}
+
+	.footer .container {
+		padding: 0 10px;
+	}
+
+	.share-side {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 640px) {
+	
+	.main-cols .main-content {
+		width: auto;
+		float: none;
+	}
+
+	.main-cols .aside {
+		width: auto;
+		float: none;
+	}
+
+	.switched-cols .main-cols .main-content {
+		margin-right: 0px;
+	}
+
+	.normal-cols .main-cols .main-content {
+		margin-left: 0px;
+	}
+
+	.article-content blockquote {
+		width: auto;
+	}
+
+	.view-web-images a { 
+		float: left;
+		margin-bottom: 19px !important;
+		margin-right: 19px !important;
+	}
+
+	.rb-categories-block.row-fluid > div {
+		width: 100%;
+		margin: 0 auto 10px auto;
+	}
+
+	.ln-header-text {
+		display: block;
+	}
+
+	.ln-header .subscription-link  {
+		float: left;
+		clear: both;
+		width: auto;
+		margin: 10px auto;
+		clear: both;
+	}
+
+	.ln-header h2 {
+		overflow: hidden;
+	}
+
+	.ln-block {
+		width: 100%;
+	}
+
+	.article-header h2 .row-fluid > div {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.article-header h2 .row-fluid > div.pull-right {
+		display: none;
+	}
+
+	/* even if JS breaks */
+	.columnize > div {
+		width: 100% !important;
+		float: none !important;
+		margin-right: 0 !important;
+	}
+
+}

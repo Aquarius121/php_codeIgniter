@@ -1,0 +1,43 @@
+<link rel="stylesheet" type="text/css" href="css/dcsmt.css" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="inc/js/jquery.plugins.js"></script>
+<script type="text/javascript" src="inc/js/jquery.site.js"></script>
+<script type="text/javascript" src="js/jquery.social.media.tabs.1.7.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#social-tabs').dcSocialTabs({
+						method: 'static',
+						width: 210,
+						height: 600,
+						rotate: {
+							delay: 8000,
+							direction: 'down'
+						},
+						widgets: 'google,facebook,fblike,fbrec,rss,twitter,pinterest,delicious,tumblr,youtube,linkedin',
+						googleId: '111470071138275408587',
+						facebookId: '157969574262873',
+						fblikeId: '157969574262873',
+						fbrecId: 'http://www.designchemical.com',
+						rssId: 'http://feeds.feedburner.com/designmodo',
+						twitterId: 'designchemical/9927875',
+						pinterestId: 'designchemical',
+						deliciousId: 'designchemical',
+						youtubeId: 'wired',
+						tumblrId: 'richters',
+						linkedinId: '589883,http://www.linkedin.com/in/leechestnutt',
+						start: 5,
+			rss: {
+				text: 'content'
+			},
+			twitter: {
+				thumb: true
+			}
+		});
+});
+</script>
+
+
+<div class="col-main float-left clear">    
+	<div id="social-tabs"></div>	
+	<div class="clear"></div>
+</div>    

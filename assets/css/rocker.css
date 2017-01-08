@@ -1,0 +1,16 @@
+.rocker input {
+	display: none;
+}
+
+.rocker .options .option {
+	background: #eee;
+	color: #666;
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.rocker .options .option.selected {
+	background: #1357A8;
+	color: #fff;
+}

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [[ "$UID" -eq 0 ]]
+then
+	su -c "$0" www
+	exit
+fi
+
+/opt/bin/stats-queue/stats-queue daemon constants.1.js
+/opt/bin/stats-queue/stats-queue daemon constants.2.js
+# /opt/bin/stats-queue/stats-queue daemon constants.3.js
+# /opt/bin/stats-queue/stats-queue daemon constants.4.js

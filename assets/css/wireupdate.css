@@ -1,0 +1,129 @@
+.main-header-small h1 {
+	font-size: 40px;
+}
+
+.wu-form-block {
+	padding: 40px 25px 30px 25px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	position: relative;
+}
+
+.wu-form-block .form-block-label {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	top: -15px;
+	width: auto;
+	background: #fff;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	left: 20px;
+	position: absolute;
+	padding: 0px 10px;
+}
+
+.wu-form-block.blue {
+	background: #DFF0FF;
+}
+
+.wu-form-block.yellow {
+	background: #F9FDEA;
+}
+
+.help-block {
+	margin-top: -20px;
+	padding-bottom: 20px;
+	font-size: 13px;
+	color: #777;
+}
+
+.field-label {
+	margin-bottom: 5px;
+	display: block;
+}
+
+.wu-form-block-container {
+	padding-top: 15px;
+}
+
+.field-label sup,
+.field-label-inline sup {
+	color: #C00;
+}
+
+.field-label.star::after {
+	margin-left: 5px;
+	content: "*";
+	color: #C00;
+}
+
+#select-beats label {
+	margin-bottom: 0px;
+}
+
+#select-beats .beats label {
+	padding-left: 35px;
+}
+
+#select-beats .beat-group .plus,
+#select-beats .beat-group .minus {
+	width: 16px;
+	text-align: center;
+	cursor: pointer;
+	display: none;
+}
+
+#select-beats .beat-group:not(.expanded) .plus,
+#select-beats .beat-group.expanded .minus {
+	display: inline-block;
+}
+
+#select-beats .beat-group {
+	line-height: 24px;
+}
+
+#select-beats .beat-group .beats {
+	height: 0px;
+	overflow: hidden;
+}
+
+#select-beats .beat-group.expanded .beats {
+	height: auto;
+	transition: height 0.25s;
+}
+
+#select-beats .beat-group.expanded .beats {
+	margin-bottom: 20px;
+}
+
+.article h3 {
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+.rocker .options .option {
+	height: 32px;
+	line-height: 32px;
+	transition: background 0.2s, color 0.2s, border-left-color 0.2s;
+	padding: 0 12px;
+	border-left: 1px solid #ccc;
+}
+
+.rocker .options .option.selected, 
+.rocker .options .option.selected + .option {
+	border-left-color: transparent;
+}
+
+.rocker .options .option:first-child {
+	border-radius: 5px 0px 0px 5px;
+	border-left: none;
+}
+
+.rocker .options .option:last-child {
+	border-radius: 0px 5px 5px 0px;
+}
+
+.content-large {
+	font-size: 20px;
+}

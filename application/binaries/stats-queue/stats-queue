@@ -1,0 +1,21 @@
+#!/bin/bash
+
+cd "$(dirname $0)"
+
+if [[ "$1" == "daemon" ]]
+then
+	DEBUG=*:info screen -dmS stats-queue node main.js "$2"
+	exit 0 
+fi
+
+if [[ "$1" == "client" ]]
+then
+   DEBUG=*:info,*:trace node main.js "$2"
+   exit 0
+fi
+
+echo "usage: stats-queue <daemon|client> [constants-filename]"
+exit 1
+
+
+

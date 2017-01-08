@@ -1,0 +1,2 @@
+<button id="admin-add-filter-confirm-button" class="confirm-find-button btn btn-primary" type="button">Add</button>
+<button id="admin-add-filter-cancel-button" class="btn" type="button">Cancel</button>

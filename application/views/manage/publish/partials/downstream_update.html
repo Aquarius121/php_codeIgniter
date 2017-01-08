@@ -1,0 +1,33 @@
+<input type="hidden" name="update_comment" id="update-comment" value="" />
+<script>
+
+$(function() {
+
+	var message = "<div class=\"ta-center marbot-15 pad-20h\"><h3 class=\"status-false\">\
+		Warning!<\/h3><br \/>This PR has already been submitted to us. Any changes you've made \
+		will need to be confirmed with our staff if you want them to be reflected \
+		on other websites. There is a small additional fee for downstream updates.<br \/><br \/>\
+		<textarea class=\"form-control\" id=\"update-comment-input\" \
+			placeholder=\"Describe the changes you\'ve made\"></textarea><br \/>\
+		<span class=\"status-false\">Do you want to continue submitting?<\/span><br \/>\
+		<\/div>";
+
+	window.required_js.on_submit = function(ev, fcb) {
+
+	//	if (ev.is_draft_save) return;
+
+		bootbox.confirm(message, function(confirmed) {
+			// transfer any comments made by user to form
+			$("#update-comment").val($("#update-comment-input").val());
+			if (confirmed) fcb();
+		});
+
+		// prevent the submit now
+		// (we will submit with fcb())
+		return false;
+		
+	};
+
+});
+
+</script>

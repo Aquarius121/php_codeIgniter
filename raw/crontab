@@ -1,0 +1,67 @@
+SHELL="/bin/bash"
+MAILTO="www@xena.newswire.com"
+PHP_INI_SCAN_DIR="/etc/php5/cli/conf.d"
+
+###########################################################
+# newswire version 2 crons --------------------------------
+###########################################################
+
+* * * * *       cd /home/www/newswire.com/v2 && php-cli newswire.php cli publish_content
+* * * * *       cd /home/www/newswire.com/v2 && php-cli newswire.php cli process_mailer_queue               
+* * * * *       cd /home/www/newswire.com/v2 && php-cli newswire.php cli process_content_notifications      
+*/5 * * * *     cd /home/www/newswire.com/v2 && php-cli newswire.php cli scheduled_iella
+*/5 * * * *     cd /home/www/newswire.com/v2 && php-cli newswire.php cli renewals
+0 0 * * *       cd /home/www/newswire.com/v2 && php-cli newswire.php cli renewals cancel_over_suspended
+
+27 * * * *      cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli distribution google_news
+27 * * * *      cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli distribution digital_journal
+*/2 * * * *     cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli distribution fin_content check_sites
+*/5 * * * *     cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli distribution fin_content process_feeds
+30 * * * *      cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli distribution world_now
+4 7 * * 0       cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli optimize_tables
+0 5 * * *       cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli send_owner_report
+*/5 * * * *     cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli publish_to_social
+*/30 * * * *    cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli news_feed_reader
+0 4 * * *       cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli send_wireupdate_dailies 
+53 7 * * *      cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli sendgrid_bounces
+21 7 * * *      cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli remove_old_contact_bounces
+*/15 * * * *    cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli content_copies_check
+3 5 * * *       cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli send_reseller_report_emails
+3 6 * * *       cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli send_pr_report_emails
+4 5 * * 0       cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli send_overall_report_emails weekly
+5 5 1 * *       cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli send_overall_report_emails monthly
+*/5 * * * *     cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli send_email_campaigns
+* * * * *       cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli send_scheduled_notifications
+18 0 * * *      cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli archive_reseller_orders
+15 * * * * 	    cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli send_pitch_writer_reminder_email
+17 * * * * 	    cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli send_writing_session_reminders
+20 3 * * *      cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli update_sf_subscriber_status
+45 * * * *      cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli stats buckets_check
+45 * * * *      cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli buffer_file_cleaner
+45 5 * * *      cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli clean_nv_store
+6 0 * * *       cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli flush_blocked
+1 */3 * * *     cd /home/www/newswire.com/v2 && nice php-cli newswire.php cli plan_migration
+
+0 7 * * *       cd /home/www/newswire.com/v2/application/binaries/msmtp && ./rotate.sh
+
+10 5 * * * 		 cd /home/www/newswire.com/v2 && php-cli newswire.php cli send_subscriber_updates >/dev/null
+50 * * * *      cd /home/www/newswire.com/v2 && php-cli newswire.php cli auto_create_nr mynewsdesk detect_lang prs >/dev/null
+50 * * * *      cd /home/www/newswire.com/v2 && php-cli newswire.php cli auto_create_nr pr_co detect_lang prs >/dev/null
+
+###########################################################
+# pressrelease crons --------------------------------------
+###########################################################
+
+45 * * * *      cd /home/www/pressrelease.com/v2 && php-cli prc.php cli buffer_file_cleaner
+*/5 * * * *     cd /home/www/pressrelease.com/v2 && php-cli prc.php cli scheduled_iella
+45 5 * * *      cd /home/www/pressrelease.com/v2 && php-cli prc.php cli clean_nv_store
+* * * * *       cd /home/www/pressrelease.com/v2 && php-cli prc.php cli process_mailer_queue
+0 * * * *       cd /home/www/pressrelease.com/v2 && php-cli prc.php cli newswire_import
+
+###########################################################
+# legacy website crons ------------------------------------
+###########################################################
+
+0 0 * * * wget -q -O /dev/null http://www.newswire.com/affiliate-program/API/recurring_commissions.php?secret=2147483647
+*/5 * * * * wget -q -O /dev/null "http://www.newswire.com/helpdesk/email_fetch.php"
+

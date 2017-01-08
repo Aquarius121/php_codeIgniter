@@ -1,0 +1,53 @@
+{
+	"name": "newswire/newswire",
+	"repositories": [
+		{
+			"type": "git",
+			"url": "https://github.com/diolemo/beanstalk.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/inewswire/braintree_php.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/inewswire/facebook-php-sdk.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/inewswire/twitteroauth.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/Breeg/AWeber-API-PHP-Library.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/inewswire/Force.com-Toolkit-for-PHP"
+		}
+	],
+	"require": {
+		"masterminds/html5": "2.*",
+		"querypath/QueryPath": ">=3.0.0",
+		"mashape/unirest-php": "2.*",
+		"league/color-extractor": "0.2.*",
+		"aweber/aweber": "dev-master", 
+		"kevinlebrun/colors.php": "1.*",
+		"pelago/emogrifier": "1.0.0",
+		"soundasleep/html2text": "^0.3.1",
+		"kissmetrics/kissmetrics": "1.0.0",
+		"p3k/multipart": "*",
+		"symfony/yaml": "2.8.*",
+		"diolemo/beanstalk": "dev-master",
+		"facebook/php-sdk": "dev-master",
+		"abraham/twitteroauth": "dev-master",
+		"inewswire/braintree_php": "*",
+		"inewswire/Force.com-Toolkit-for-PHP": "^1.0",
+		"templateria/spamassassin": "dev-master",
+		"matthiasmullie/minify": "^1.3",
+		"mustache/mustache": "^2.11",
+		"zbateson/mail-mime-parser": "^0.3.0",
+		"facebook/graph-sdk" : "~5.0",
+		"cosenary/instagram" : "2.*"
+	}
+}

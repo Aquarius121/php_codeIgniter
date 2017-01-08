@@ -1,0 +1,131 @@
+body { 
+	max-width: 700px;
+	margin: 20px auto 40px auto;
+}
+
+.adr-org { 
+	font-weight: bold;
+}
+
+.raw-company-logo {
+	display: block;
+	margin: 0px;
+	line-height: 80px;
+	height: 80px;
+}
+
+.view-original-source {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.al-adr .adr-tel a {
+	color: #8092A6;
+}
+
+.rb-categories-block {
+	padding-bottom: 20px;
+}
+
+.aside-content-block .aside-pc-name {
+	font-weight: normal;
+	color: #666;
+}
+
+.raw-email-icon {
+	vertical-align: top;
+	margin-left: 3px;
+	text-decoration: none;
+}
+
+a.raw-email-icon,
+a.raw-email-icon:hover {
+	text-decoration: none;
+}
+
+.raw-email-icon i {
+	color: #1357a8;
+	font-size: 11px;
+}
+
+.resources-block h3 {
+	border-bottom: 1px solid #CCCCCC;
+}
+
+hr {
+	border-top-color: #CCCCCC;
+}
+
+.article-content {
+	margin-top: 15px;
+}
+
+.org-header-text > span {
+	height: 77px;
+}
+
+hr.dashed {
+	border-top: 1px dashed #ccc;
+	bottom-bottom: 0;
+	margin: 15px 0;
+}
+
+.org-header-text .prefix {
+	font-size: 11px;
+	letter-spacing: 0.5pt;
+}
+
+.org-header-text h1 {
+	font-size: 28px;
+	line-height: 28px;
+	letter-spacing: -0.5pt;
+}
+
+.org-header-text .raw-company-logo {
+	margin-right: 35px;
+}
+
+.org-header-text {
+	float: none;
+}
+
+.add-border {
+	border-radius: 5px;
+}
+
+h2 {
+	font-size: 31px;
+}
+
+.view-web-images img {
+	border-radius: 5px;
+}
+
+.article-content blockquote {
+	width: 40%;
+	float: right;
+	margin-bottom: 28px;
+}
+
+.article-content blockquote .author {
+	font-size: 10px;
+	padding-bottom: 17px;
+	max-width: 75%;
+	bottom: -40px;
+}
+
+.al-adr.aside-content-block {
+	margin-left: 112px !important;
+}
+
+.raw-press-contact img {
+	margin: 0px 0px 10px 0px;
+	float: left;
+	width: 92px;
+	height: 92px;
+	border-radius: 5px;
+}
+
+.page-break-avoid {
+	page-break-inside: avoid;
+}
